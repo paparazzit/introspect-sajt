@@ -1,227 +1,299 @@
-
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
-:root{
-    --red:#e5474b;
-    --black:#1c1c1c;
-    --gray: #d5d5d5;
-    --fontSize: 16px;
-    --bodyFont: "Lato", sans-serif;
-    --fancyFont: "Pacifico", sans-serif;
-    --whiteBackgound: #f7f7f7;
+:root {
+	--red: #e5474b;
+	--black: #1c1c1c;
+	--gray: #d5d5d5;
+	--fontSize: 16px;
+	--bodyFont: "Lato", sans-serif;
+	--fancyFont: "Pacifico", sans-serif;
+	--whiteBackgound: #f7f7f7;
 }
 
-
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-body{
-    font-family:var(--bodyFont)
+body {
+	font-family: var(--bodyFont);
 }
-.container{
-    width: 80%;
-    margin: auto;
+.container {
+	width: 80%;
+	margin: auto;
 }
-.container-2{
-    width: 95%;
-    margin: auto;
-    
+.container-2 {
+	width: 95%;
+	margin: auto;
 }
-.container-2::after{
-     display: block;
-    content: '';
-    clear: both;
+.container-2::after {
+	display: block;
+	content: "";
+	clear: both;
 }
-.container::after{
-    display: block;
-    content: '';
-    clear: both;
+.container::after {
+	display: block;
+	content: "";
+	clear: both;
 }
-.about-us::after{
-    display: block;
-    content: '';
-    clear: both;
+.about-us::after {
+	display: block;
+	content: "";
+	clear: both;
 }
-ul{
-    list-style: none;
+ul {
+	list-style: none;
 }
-a{
-    text-decoration: none;
-    
+a {
+	text-decoration: none;
 }
-.btn-red{
-padding: 10px 30px;
-    font-size: 1rem;
-    text-transform: uppercase;
-   border: 2px solid var(--red);
-    color: var(--red);
-    background: rgba(255, 255, 255, 0);
+.btn-red {
+	padding: 10px 30px;
+	font-size: 1rem;
+	text-transform: uppercase;
+	border: 2px solid var(--red);
+	color: var(--red);
+	background: rgba(255, 255, 255, 0);
 }
-.btn-head{
-    padding: 10px 30px;
-    font-size: 1rem;
-    text-transform: uppercase;
-   border: 2px solid white;
-    color: white;
-    background: rgba(255, 255, 255, 0);
-    
+.btn-head {
+	padding: 10px 30px;
+	font-size: 1rem;
+	text-transform: uppercase;
+	border: 2px solid white;
+	color: white;
+	background: rgba(255, 255, 255, 0);
 }
 
 /*Header*/
 
-nav{
-    background: black;
-    height: 70px;
-    line-height: 70px;
-    
+nav {
+	background: black;
+	height: 70px;
+	line-height: 70px;
 }
-nav .logo{
-    float: left;
+nav .logo {
+	float: left;
 }
-nav ul{
-    float: right;
+nav ul {
+	float: right;
 }
-nav .logo a{
-    font-size: 1.9rem;
-    font-family: var(--fancyFont);
-    color: var(--red);
-    color: var(--red);
+nav .logo a {
+	font-size: 1.9rem;
+	font-family: var(--fancyFont);
+	color: var(--red);
+	color: var(--red);
 }
 nav ul li {
-    display: inline-block;
-    margin: 0 20px;
-    
+	display: inline-block;
+	margin: 0 20px;
 }
-nav ul li a{
-    color: white;
+nav ul li a {
+	color: white;
 }
-header{
-    background: url(images/banner.jpg);
-    background-position: center;
-    background-size: cover;
-    
+header {
+	background: url(images/banner.jpg);
+	background-position: top;
+	background-size: cover;
 }
-header .banner{
-    padding: 150px 0
+header .banner {
+	padding: 220px 0;
 }
-header hgroup{
-    
-    text-align: left;
-    color:white;
+header hgroup {
+	text-align: left;
+	color: white;
 }
-header hgroup h1{
-    margin-bottom: 50px;
-    letter-spacing: 2px;
+header hgroup h1 {
+	margin-bottom: 50px;
+	letter-spacing: 2px;
 }
-header hgroup h1 span{
-    text-transform: uppercase;
-    font-weight: bold;
+header hgroup h1 span {
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
-header .banner .btn-head{
-    padding: 10px 30px;
-    font-size: 1rem;
-    text-transform: uppercase;
-   border: 2px solid white;
-    color: white;
-    background: rgba(255, 255, 255, 0);
-    
+header .banner .btn-head {
+	padding: 10px 30px;
+	font-size: 1rem;
+	text-transform: uppercase;
+	border: 2px solid white;
+	color: white;
+	background: rgba(255, 255, 255, 0);
 }
 /*intro*/
-.intro article h2{
-     color: var(--red);
-    font-size: 2rem;
-    padding-bottom: 30px
+.intro article h2 {
+	color: var(--red);
+	font-size: 2rem;
+	padding-bottom: 30px;
 }
-.intro article p{
-    padding-bottom: 30px;
-    line-height: 2;
+.intro article p {
+	padding-bottom: 30px;
+	line-height: 2;
 }
-.intro{
-    margin-top: 50px;
-    margin-bottom: 50px
+.intro {
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 /*about us*/
-.about-us{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.about-us {
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
-.about-us article{
-    width: 50%;
-    float:left;
-    text-align: center;
-   padding: 20px;
-    
-   
+.about-us article {
+	width: 50%;
+	float: left;
+
+	padding: 20px 100px;
+	background: rgba(247, 247, 247, 0.445);
 }
-.about-us article h2{
-    color: var(--red);
-    font-size: 2rem;
-    padding-bottom: 30px
+.about-us article h2 {
+	color: var(--red);
+	font-size: 1.5rem;
+	padding-bottom: 30px;
 }
-.about-us article p{
-    line-height: 2;
-    
+.about-us article p {
+	margin-top: 30px;
+	line-height: 2;
 }
-.about-us article:nth-child(even){
-    background: rgba(217, 217, 217, 0.72);
-    float: right;
-    width: 50%
-    
+.about-us article:nth-child(even) {
+	background: rgba(243, 242, 242, 0.72);
+	float: right;
+	width: 50%;
 }
-.about-us article img{
-    width: 100%
+.about-us article img {
+	width: 100%;
 }
 /*services*/
 
-.services article{
-    float: left;
-    width: 33%;
-    padding: 0 20px
+.services article {
+	float: left;
+	width: 33%;
+	padding: 0 20px;
+	margin-bottom: 80px;
 }
-.services article i{
-    font-size: 2.2rem;
-    color: var(--gray);
-    margin-bottom: 20px
+.services article i {
+	font-size: 2.2rem;
+	color: var(--gray);
+	margin-bottom: 20px;
 }
-.services article h2{
-    color: var(--red);
-    margin-bottom: 20px
+.services article h2 {
+	color: var(--red);
+	margin-bottom: 20px;
 }
-.services article p{
-    line-height: 1.6;
-    margin-bottom: 20px;
+.services article p {
+	line-height: 1.6;
+	margin-bottom: 20px;
 }
 
 /*contact*/
-.contact{
-    background: var(--red);
-    
+.contact {
+	background: var(--red);
+	padding: 50px 0;
+	color: white;
 }
-.contact::after{
-    display: block;
-    content: '';
-    clear: both;
+.contact h3 {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	padding-bottom: 50px;
 }
-.contact label {
-    width: 50%;
-    float: left;
-
+.contact::after {
+	display: block;
+	content: "";
+	clear: both;
 }
-.contact input{
-    width: 50%;
-    float: left;
+/* .contact label {
+	float: left;
+	width: 48%;
 }
 
+.contact label:nth-child(2) {
+	float: right;
+}
+.contact input {
+	width: 48%;
+	float: left;
+	padding: 5px 0 5px;
+	background: var(--red);
+	border: 3px solid rgba(255, 255, 255, 0.37);
+	color: white;
+}
+.contact input:last-child {
+	float: right;
+} */
+.contact .name {
+	width: 49%;
+	float: left;
+}
+.contact .email {
+	width: 49%;
+	float: right;
+}
+.contact input {
+	width: 100%;
+	background: var(--red);
+	border: 3px solid rgba(255, 255, 255, 0.37);
+	color: white;
+	padding: 5px 0;
+	margin-top: 10px;
+}
 
+.contact textarea {
+	margin-top: 30px;
+	width: 100%;
+	background: var(--red);
+	border: 3px solid rgba(255, 255, 255, 0.37);
+	color: white;
+}
+.contact .btn-head {
+	margin-top: 30px;
+}
+footer {
+	background: var(--red);
+	color: white;
+	padding: 20px 0;
+}
+footer a {
+	color: white;
+}
 
+@media (max-width: 786px) {
+	nav {
+		line-height: 2;
+		height: 100px;
+	}
+	nav .logo {
+		float: none;
+		text-align: center;
+		list-style: 1;
+	}
+	nav ul {
+		float: none;
+		line-height: 1;
+	}
+	.about-us article {
+		width: 100%;
+		float: none;
+		padding: 10px 30px;
+	}
+	.about-us article:nth-child(even) {
+		width: 100%;
+		float: none;
+		padding: 10px 30px;
+	}
+	.services article {
+		width: 100%;
+		float: none;
+		padding: 10px 0;
+	}
 
-
-
-
-
-
-
+	.services article {
+		text-align: center;
+	}
+	.contact .name {
+		width: 100%;
+		float: none;
+	}
+	.contact .email {
+		width: 100%;
+		float: none;
+	}
+}
